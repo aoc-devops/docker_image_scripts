@@ -1,10 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-      - sudo apt-get update -y
-      - sudo systemctl start docker
-      - sudo systemctl status docker
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
